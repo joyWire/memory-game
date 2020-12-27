@@ -20,6 +20,8 @@
 			android:layout_margin="@dimen/theme_margin_all"
 			android:layout_weight="1">
 
+
+
 			<ImageView
 				android:id="@+id/theme_animals"
 				android:layout_width="match_parent"
@@ -28,6 +30,21 @@
 				android:contentDescription="@string/app_name"
 				android:src="@drawable/animals_theme_star_0" />
 
+			<TextView
+				android:id="@+id/category"
+				android:layout_width="294dp"
+				android:layout_height="73dp"
+				android:layout_marginLeft="150dp"
+				android:gravity="center"
+				android:shadowColor="#2eaed9"
+				android:shadowDx="4"
+				android:shadowDy="4"
+				android:shadowRadius="4"
+				android:text="Animals"
+				android:textColor="#FFFFFF"
+				android:textAlignment="center"
+				android:fontFamily="sans-serif-condensed"
+				android:textSize="@dimen/category_title_text_size" />
 		</RelativeLayout>
 
 		<RelativeLayout
