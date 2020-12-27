@@ -34,7 +34,7 @@
 				android:id="@+id/category"
 				android:layout_width="294dp"
 				android:layout_height="73dp"
-				android:layout_marginLeft="150dp"
+				android:layout_marginStart="150dp"
 				android:gravity="center"
 				android:shadowColor="#2eaed9"
 				android:shadowDx="4"
