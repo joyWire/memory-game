@@ -19,29 +19,6 @@
 			android:padding="@dimen/theme_padding"
 			android:layout_margin="@dimen/theme_margin_all"
 			android:layout_weight="1">
-			<LinearLayout
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:baselineAligned="false"
-				android:gravity="fill"
-				android:weightSum="9"
-				android:orientation="vertical">
-				<!-- TODO Add image here -->
-				<TextView
-					android:id="@+id/category"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:shadowColor="#2eaed9"
-					android:shadowDx="4"
-					android:shadowDy="4"
-					android:shadowRadius="4"
-					android:background="@drawable/animals_5"
-
-					android:text="Animals"
-					android:textColor="#FFFFFF"
-					android:textSize="@dimen/category_title_text_size"
-					android:layout_weight="1"/>
 				<ImageView
 					android:id="@+id/theme_animals"
 					android:layout_width="match_parent"
@@ -50,7 +27,6 @@
 					android:contentDescription="@string/app_name"
 					android:layout_weight="2"
 					android:src="@drawable/animals_theme_star_0" />
-			</LinearLayout>
 		</RelativeLayout>
 
 
