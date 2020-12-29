@@ -24,28 +24,15 @@ public class Themes {
 		return theme;
 	}
 
-	public static Theme createMosterTheme() {
-		Theme theme = new Theme();
-		theme.id = 2;
-		theme.name = "Mosters";
-		theme.backgroundImageUrl = URI_DRAWABLE + "back_horror";
-		theme.tileImageUrls = new ArrayList<String>();
-		// 40 drawables
-		for (int i = 1; i <= 40; i++) {
-			theme.tileImageUrls.add(URI_DRAWABLE + String.format("mosters_%d", i));
-		}
-		return theme;
-	}
-
 	public static Theme createEmojiTheme() {
 		Theme theme = new Theme();
 		theme.id = 3;
 		theme.name = "Emoji";
-		theme.backgroundImageUrl = URI_DRAWABLE + "background";
+		theme.backgroundImageUrl = URI_DRAWABLE + "back_fruits";
 		theme.tileImageUrls = new ArrayList<String>();
 		// 40 drawables
 		for (int i = 1; i <= 40; i++) {
-			theme.tileImageUrls.add(URI_DRAWABLE + String.format("emoji_%d", i));
+			theme.tileImageUrls.add(URI_DRAWABLE + String.format("fruits_%d", i));
 		}
 		return theme;
 	}
