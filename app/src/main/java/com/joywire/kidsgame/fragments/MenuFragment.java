@@ -34,9 +34,7 @@ public class MenuFragment extends Fragment {
 	private ImageView mTitle;
 	private ImageView mStartGameButton;
 	private ImageView mStartButtonLights;
-	private ImageView mTooltip;
 	private ImageView mSettingsGameButton;
-	private ImageView mGooglePlayGameButton;
 	AdView adView;
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -51,15 +49,8 @@ public class MenuFragment extends Fragment {
 				PopupManager.showPopupSettings();
 			}
 		});
-		mGooglePlayGameButton = (ImageView) view.findViewById(R.id.google_play_button);
-		mGooglePlayGameButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Toast.makeText(getActivity(), "Leader boards will be available in the next game updates", Toast.LENGTH_LONG).show();
-			}
-		});
+
 		mStartButtonLights = (ImageView) view.findViewById(R.id.start_game_button_lights);
-		mTooltip = (ImageView) view.findViewById(R.id.tooltip);
 		mStartGameButton.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -105,19 +96,10 @@ public class MenuFragment extends Fragment {
 		ObjectAnimator lightsAnimatorX = ObjectAnimator.ofFloat(mStartButtonLights, "scaleX", 0f);
 		ObjectAnimator lightsAnimatorY = ObjectAnimator.ofFloat(mStartButtonLights, "scaleY", 0f);
 
-		// tooltip
-		ObjectAnimator tooltipAnimator = ObjectAnimator.ofFloat(mTooltip, "alpha", 0f);
-		tooltipAnimator.setDuration(100);
-
 		// settings button
 		ObjectAnimator settingsAnimator = ObjectAnimator.ofFloat(mSettingsGameButton, "translationY", Utils.px(120));
 		settingsAnimator.setInterpolator(new AccelerateInterpolator(2));
 		settingsAnimator.setDuration(300);
-
-		// google play button
-		ObjectAnimator googlePlayAnimator = ObjectAnimator.ofFloat(mGooglePlayGameButton, "translationY", Utils.px(120));
-		googlePlayAnimator.setInterpolator(new AccelerateInterpolator(2));
-		googlePlayAnimator.setDuration(300);
 
 		// start button
 		ObjectAnimator startButtonAnimator = ObjectAnimator.ofFloat(mStartGameButton, "translationY", Utils.px(130));
@@ -125,20 +107,13 @@ public class MenuFragment extends Fragment {
 		startButtonAnimator.setDuration(300);
 
 		AnimatorSet animatorSet = new AnimatorSet();
-		animatorSet.playTogether(titleAnimator, lightsAnimatorX, lightsAnimatorY, tooltipAnimator, settingsAnimator, googlePlayAnimator, startButtonAnimator);
 		animatorSet.addListener(adapter);
 		animatorSet.start();
 	}
 
 	private void startTootipAnimation() {
-		ObjectAnimator scaleY = ObjectAnimator.ofFloat(mTooltip, "scaleY", 0.8f);
-		scaleY.setDuration(200);
-		ObjectAnimator scaleYBack = ObjectAnimator.ofFloat(mTooltip, "scaleY", 1f);
-		scaleYBack.setDuration(500);
-		scaleYBack.setInterpolator(new BounceInterpolator());
 		final AnimatorSet animatorSet = new AnimatorSet();
 		animatorSet.setStartDelay(1000);
-		animatorSet.playSequentially(scaleY, scaleYBack);
 		animatorSet.addListener(new AnimatorListenerAdapter() {
 			@Override
 			public void onAnimationEnd(Animator animation) {
@@ -146,7 +121,6 @@ public class MenuFragment extends Fragment {
 				animatorSet.start();
 			}
 		});
-		mTooltip.setLayerType(View.LAYER_TYPE_HARDWARE, null);
 		animatorSet.start();
 	}
 
