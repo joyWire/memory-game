@@ -82,9 +82,8 @@ public class MainActivity extends FragmentActivity  implements EventObserver, Me
 
 			}
 		});
-		List<String> testDeviceIds = Arrays.asList("samsung-sm_n950f-ce0817181868d81c0c7e");
-		RequestConfiguration configuration =
-				new RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build();
+		RequestConfiguration configuration = new RequestConfiguration.Builder()
+				.setMaxAdContentRating("MAX_AD_CONTENT_RATING_G").build();
 		MobileAds.setRequestConfiguration(configuration);
 		Shared.eventBus.listen(GameWonEvent.TYPE, this);
 	}

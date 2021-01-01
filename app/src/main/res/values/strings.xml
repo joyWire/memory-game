@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">الأطفال الأذكياء لعبة الذاكرة</string>
     <string name="debug">regular</string>
-    <string name="app_id">cca-app-pub-7642876235955304~7200615825</string>
-    <string name="add_unit_banner">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="add_unit_video"> ca-app-pub-3940256099942544/5224354917</string>
+    <string name="app_id">ca-app-pub-7642876235955304~7200615825</string>
+    <string name="add_unit_banner">ca-app-pub-7642876235955304/5823954977</string>
+    <string name="add_unit_video">ca-app-pub-7642876235955304/7184411751</string>
 </resources>
