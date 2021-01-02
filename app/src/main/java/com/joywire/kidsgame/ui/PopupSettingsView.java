@@ -59,10 +59,10 @@ public class PopupSettingsView extends LinearLayout {
 
 	private void setMusicButton() {
 		if (Music.OFF) {
-			mSoundText.setText("Sound OFF");
+			mSoundText.setText(getResources().getString(R.string.soundOnText));
 			mSoundImage.setImageResource(R.drawable.button_music_off);
 		} else {
-			mSoundText.setText("Sound ON");
+			mSoundText.setText(getResources().getString(R.string.soundOffText));
 			mSoundImage.setImageResource(R.drawable.button_music_on);
 		}
 	}

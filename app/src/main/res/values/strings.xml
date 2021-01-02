@@ -6,7 +6,8 @@
     <string name="add_unit_banner">ca-app-pub-7642876235955304/5823954977</string>
     <string name="add_unit_video">ca-app-pub-7642876235955304/7184411751</string>
     <string name="rating">تقييم</string>
-    <string name="soundOffText">تفعيل الصوت</string>
+    <string name="soundOnText">تفعيل الصوت</string>
+    <string name="soundOffText">كتم</string>
     <string name="level1">مبتدأ</string>
     <string name="level2">سهل</string>
     <string name="level3">متوسط</string>
