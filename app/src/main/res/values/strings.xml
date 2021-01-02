@@ -5,4 +5,6 @@
     <string name="app_id">ca-app-pub-7642876235955304~7200615825</string>
     <string name="add_unit_banner">ca-app-pub-7642876235955304/5823954977</string>
     <string name="add_unit_video">ca-app-pub-7642876235955304/7184411751</string>
+    <string name="rating">تقييم</string>
+    <string name="soundOffText">تفعيل الصوت</string>
 </resources>
