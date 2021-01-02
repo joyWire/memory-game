@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="debug">sw600dp</string>
     <string name="rating">تقييم</string>
     <string name="soundOffText">تفعيل الصوت</string>
-
 </resources>

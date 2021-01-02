@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">الأطفال الأذكياء</string>
     <string name="debug">regular</string>
     <string name="app_id">ca-app-pub-7642876235955304~7200615825</string>
     <string name="add_unit_banner">ca-app-pub-7642876235955304/5823954977</string>
     <string name="add_unit_video">ca-app-pub-7642876235955304/7184411751</string>
-    <string name="app_name">الأطفال الأذكياء</string>
+    <string name="rating">تقييم</string>
+    <string name="soundOffText">تفعيل الصوت</string>
     <string name="level1">مبتدأ</string>
     <string name="level2">سهل</string>
     <string name="level3">متوسط</string>
