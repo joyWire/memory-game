@@ -14,5 +14,9 @@
     <string name="level4">صعب</string>
     <string name="level5">صعب جدا</string>
     <string name="level6">محترف</string>
+    <string name="best_score_initial">أفضل توقيت: -</string>
+    <string name="best_score">أفضل توقيت:</string>
+    <string name="score">النقاط</string>
+    <string name="time">التوقيت:</string>
 
 </resources>

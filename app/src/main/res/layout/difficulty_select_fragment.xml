@@ -2,27 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:paddingRight="@dimen/difficulty_padding"
-    android:orientation="horizontal"
     android:layout_marginTop="0dp"
-    android:paddingLeft="@dimen/difficulty_padding">
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/difficulty_padding"
+    android:paddingRight="@dimen/difficulty_padding">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="30dp"
         android:layout_marginLeft="@dimen/difficulty_margin"
-        android:layout_marginRight="@dimen/difficulty_margin"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/difficulty_margin"
+        android:layout_marginBottom="30dp"
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical">
+
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:gravity="center"
-            android:orientation="vertical"
-            android:layout_height="45dp"
-            android:layout_width="match_parent">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -33,30 +35,16 @@
                 android:shadowRadius="4"
                 android:text="@string/level1"
                 android:textColor="#FFFFFF"
-                android:textSize="37sp"/>
+
+                android:textSize="30sp" />
         </LinearLayout>
 
-        <com.joywire.kidsgame.ui.DifficultyView
-            android:id="@+id/select_difficulty_1"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginBottom="18dp"
-            android:background="@drawable/time_border"
-            android:id="@+id/time_difficulty_1"
-            android:textSize="17sp" 
-            android:layout_marginTop="5dp"
-            />
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:gravity="center"
-            android:orientation="vertical"
-            android:layout_height="45dp"
-            android:layout_width="match_parent">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -67,23 +55,48 @@
                 android:shadowRadius="4"
                 android:text="@string/level4"
                 android:textColor="#FFFFFF"
-                android:textSize="37sp"/>
+                android:textSize="30sp" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_difficulty_1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/time_border"
+            android:shadowColor="#2eaed9"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/time_difficulty_4"
+            android:layout_width="match_parent"
+
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/time_border"
+            android:shadowColor="#2eaed9"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
         <com.joywire.kidsgame.ui.DifficultyView
             android:id="@+id/select_difficulty_4"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_weight="1"/>
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
-        <TextView
+        <com.joywire.kidsgame.ui.DifficultyView
+            android:id="@+id/select_difficulty_1"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            
-            android:background="@drawable/time_border"
-            android:id="@+id/time_difficulty_4"
-            android:textSize="17sp"
-            android:layout_marginTop="5dp"
-            />
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
 
     </LinearLayout>
@@ -91,19 +104,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="30dp"
         android:layout_marginLeft="@dimen/difficulty_margin"
-        android:layout_marginRight="@dimen/difficulty_margin"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/difficulty_margin"
+        android:layout_marginBottom="30dp"
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical">
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:gravity="center"
-            android:orientation="vertical"
-            android:layout_height="45dp"
-            android:layout_width="match_parent">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -114,31 +128,15 @@
                 android:shadowRadius="4"
                 android:text="@string/level2"
                 android:textColor="#FFFFFF"
-                android:textSize="37sp"/>
+                android:textSize="30sp" />
         </LinearLayout>
 
-        <com.joywire.kidsgame.ui.DifficultyView
-            android:id="@+id/select_difficulty_2"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_weight="1"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            
-            android:layout_marginBottom="18dp"
-            android:background="@drawable/time_border"
-            android:id="@+id/time_difficulty_2"
-            android:textSize="17sp" 
-            android:layout_marginTop="5dp"
-          />
-
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:gravity="center"
-            android:orientation="vertical"
-            android:layout_height="45dp"
-            android:layout_width="match_parent">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -149,24 +147,49 @@
                 android:shadowRadius="4"
                 android:text="@string/level5"
                 android:textColor="#FFFFFF"
-                android:textSize="37sp"/>
+                android:textSize="30sp" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_difficulty_2"
+            android:layout_width="match_parent"
+
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/time_border"
+            android:shadowColor="#2eaed9"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/time_difficulty_5"
+            android:layout_width="match_parent"
+
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/time_border"
+            android:shadowColor="#2eaed9"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
 
         <com.joywire.kidsgame.ui.DifficultyView
             android:id="@+id/select_difficulty_5"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_weight="1"/>
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
-        <TextView
+        <com.joywire.kidsgame.ui.DifficultyView
+            android:id="@+id/select_difficulty_2"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            
-            android:background="@drawable/time_border"
-            android:id="@+id/time_difficulty_5"
-            android:textSize="17sp" 
-            android:layout_marginTop="5dp"
-            />
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
 
     </LinearLayout>
@@ -174,18 +197,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="30dp"
         android:layout_marginLeft="@dimen/difficulty_margin"
-        android:layout_marginRight="@dimen/difficulty_margin"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/difficulty_margin"
+        android:layout_marginBottom="30dp"
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical">
+
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:gravity="center"
-            android:orientation="vertical"
-            android:layout_height="45dp"
-            android:layout_width="match_parent">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -196,28 +221,15 @@
                 android:shadowRadius="4"
                 android:text="@string/level3"
                 android:textColor="#FFFFFF"
-                android:textSize="37sp"/>
+                android:textSize="30sp" />
         </LinearLayout>
-        <com.joywire.kidsgame.ui.DifficultyView
-            android:id="@+id/select_difficulty_3"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_weight="1"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            
-            android:background="@drawable/time_border"
-            android:layout_marginBottom="18dp"
-            android:id="@+id/time_difficulty_3"
-            android:textSize="17sp" 
-            android:layout_marginTop="5dp"/>
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:gravity="center"
-            android:orientation="vertical"
-            android:layout_height="45dp"
-            android:layout_width="match_parent">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -228,23 +240,47 @@
                 android:shadowRadius="4"
                 android:text="@string/level6"
                 android:textColor="#FFFFFF"
-                android:textSize="37sp"/>
+                android:textSize="30sp" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_difficulty_3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/time_border"
+            android:shadowColor="#2eaed9"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/time_difficulty_6"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/time_border"
+            android:shadowColor="#2eaed9"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
         <com.joywire.kidsgame.ui.DifficultyView
             android:id="@+id/select_difficulty_6"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_weight="1"/>
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
-        <TextView
+        <com.joywire.kidsgame.ui.DifficultyView
+            android:id="@+id/select_difficulty_3"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            
-            android:background="@drawable/time_border"
-            android:id="@+id/time_difficulty_6"
-            android:textSize="17sp" 
-            android:layout_marginTop="5dp"
-            />
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
 
     </LinearLayout>

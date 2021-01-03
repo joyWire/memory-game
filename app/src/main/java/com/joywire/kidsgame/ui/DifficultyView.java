@@ -27,7 +27,7 @@ public class DifficultyView extends LinearLayout {
 	}
 	
 	public void setDifficulty(int difficulty, int stars) {
-		String titleResource = String.format(Locale.US, "button_difficulty_%d_star_%d", difficulty, stars);
+		String titleResource = String.format(Locale.US, "button_difficulty_star_%d", stars);
 		int drawableResourceId = Shared.context.getResources().getIdentifier(titleResource, "drawable", Shared.context.getPackageName());
 		mTitle.setImageResource(drawableResourceId);
 	}

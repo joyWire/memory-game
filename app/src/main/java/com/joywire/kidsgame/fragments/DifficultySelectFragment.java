@@ -95,10 +95,10 @@ public class DifficultySelectFragment extends Fragment {
         if (bestTime != -1) {
             int minutes = (bestTime % 3600) / 60;
             int seconds = (bestTime) % 60;
-            String result = String.format("BEST : %02d:%02d", minutes, seconds);
+            String result = String.format(getResources().getString(R.string.best_score)+"%02d:%02d", minutes, seconds);
             return result;
         } else {
-            String result = "BEST : -";
+            String result = getResources().getString(R.string.best_score_initial);
             return result;
         }
     }

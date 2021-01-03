@@ -181,8 +181,7 @@ public class PopupWonView extends RelativeLayout {
 
 	}
 	public void setupVideoAds(Context context, Activity activityContext){
-		RewardedAd rewardedAd = new RewardedAd(context,
-				"ca-app-pub-3940256099942544/5224354917");
+		RewardedAd rewardedAd = new RewardedAd(context,getResources().getString(R.string.add_unit_video));
 
 		RewardedAdLoadCallback adLoadCallback = new RewardedAdLoadCallback() {
 			@Override
